@@ -11,6 +11,10 @@ li,ul{
     padding: 0;
     margin: 0;
 }
+
+.total-worked-time{
+    text-align: right;
+}
 .header-top i {
     font-size: 18px;
 }
@@ -185,7 +189,7 @@ li,ul{
 }
 
 #navigation {
-    background: #293758;
+    background: #0e1a35;
 }
 
 #navigation {
@@ -435,7 +439,7 @@ header {
     border-radius: 100px;
     font-size: 15px;
     letter-spacing: 0.5px;
-    padding-right: 32px;
+    padding-right: 6px;
     color: #0e1a35;
 }
 
@@ -550,7 +554,7 @@ header {
 .modal-header .close {
     margin-top: 2px;
 }
-.search input:focus {
+.search input:focus{
     border-bottom: 1px solid #BDC4D4;
     line-height:22px;
     transition: 0.1s all;
@@ -558,6 +562,7 @@ header {
 .modal-header.login-header {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+/*Main CSS*/
 }
 
 
@@ -694,9 +699,28 @@ header {
 }
 }
 @media only screen and (min-device-width:998px) and (max-device-width: 1350px){
-        #navigation .logo img {
+  #navigation .logo img {
     max-width: 130px;
     padding: 16px 0 17px;
     width: 100%;
+  }
 }
+.modal-dialog { width: 300px!important }
+
+input[type="date"]:hover::-webkit-calendar-picker-indicator {
+  color: red;
+}
+input[type="date"]::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="time"]:hover::-webkit-calendar-picker-indicator {
+  color: red;
+}
+input[type="time"]::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
 }

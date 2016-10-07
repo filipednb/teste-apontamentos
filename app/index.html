@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>teste entelgy</title>
+    <title>Teste Front-End</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -44,15 +44,15 @@
                           </a>
                         </li>
                         <li>
-                          <a href="#" id="link_apontamentos" >
+                          <a href="#" id="menu-apontamentos" >
                             <i class="fa fa-tasks" aria-hidden="true"></i>
                             <span class="hidden-xs hidden-sm">Apontamentos</span>
                           </a>
                         </li>
                         <li>
-                          <a href="#" id="link_relatorios">
+                          <a href="#" id="menu-charts">
                             <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                            <span class="hidden-xs hidden-sm">Relatórios</span>
+                            <span class="hidden-xs hidden-sm">Gráficos</span>
                           </a>
                         </li>
                         <li>
@@ -91,18 +91,10 @@
                                     </button>
                                 </div>
                             </nav>
-                            <div class="search hidden-xs hidden-sm">
-                                <input type="text" placeholder="Search" id="search">
-                            </div>
                         </div>
                         <div class="col-md-5">
                             <div class="header-rightside">
                                 <ul class="list-inline header-top pull-right">
-                                    <li class="hidden-xs">
-                                      <a href="#" class="add-project" data-toggle="modal" data-target="#add_project">
-                                        Adicionar Apontamento<i class="fa fa-plus" aria-hidden="true"></i>
-                                      </a>
-                                    </li>
                                     <li>
                                         <a href="#" class="icon-info">
                                             <i class="fa fa-bell" aria-hidden="true"></i>
@@ -132,24 +124,11 @@
                     </header>
                 </div>
                 <div class="user-dashboard">
-                    <h1>Hello, JS</h1>
+                    <br />
                     <div class="row">
-                        <div class="col-md-12 col-sm-7 col-xs-12 gutter">
-
-                            <div class="sales report">
-                                <h2>RelatórioGráfico</h2>
-                                <div class="btn-group">
-                                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span>Periodo:</span>Último ano
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a href="#">2012</a>
-                                        <a href="#">2014</a>
-                                        <a href="#">2015</a>
-                                        <a href="#">2016</a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 gutter">
+                          <div class="sales report" id="app-main-content">
+                          </div>
                         </div>
                     </div>
                 </div>
@@ -157,45 +136,20 @@
         </div>
 
     </div>
-
-
-
-    <!-- Modal -->
-    <div id="add_project" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header login-header">
-                    <button type="button" class="close" data-dismiss="modal">×</button>
-                    <h4 class="modal-title">Add Project</h4>
-                </div>
-                <div class="modal-body">
-                            <input type="text" placeholder="Project Title" name="name">
-                            <input type="text" placeholder="Post of Post" name="mail">
-                            <input type="text" placeholder="Author" name="passsword">
-                            <textarea placeholder="Desicrption"></textarea>
-                    </div>
-                <div class="modal-footer">
-                    <button type="button" class="cancel" data-dismiss="modal">Close</button>
-                    <button type="button" class="add-project" data-dismiss="modal">Save</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div id="app-main-content">
-
-    </div>
-
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/bower_components/chart.js/dist/Chart.js"></script>
+    <script src="/bower_components/jquery-validation/dist/jquery.validate.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->
+    <script src="scripts/Apontamentos.js"></script>
+    <script src="scripts/Graficos.js"></script>
+    <script src="scripts/Network.js"></script>
+    <!-- chamar o main por ultimo para termos certeza -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>

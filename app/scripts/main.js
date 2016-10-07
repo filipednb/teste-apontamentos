@@ -1,23 +1,40 @@
 //Callback disparado quando a página está carregada
 $(document).ready(function(){
-	App.init();
-
+	Main.init();
 	$('[data-toggle="offcanvas"]').click(function(){
-		$("#navigation").toggleClass("hidden-xs");
-	});
-
+       $("#navigation").toggleClass("hidden-xs");
+   });
 });
 
 
-var App = {
-	//Adiciona os 
-  init: function() { 
-		$("#app-main-content").load("views/login.html");
-
+var Main = {
+	init: function() { 
 		//definindo ações dos botões do menu
-		$("#menu-apontamentos").click(function() {
-			$("#app-main-content").load("views/manutencao-de-apontamentos.html");			
+		$('#app-main-content').load('views/apontamentos.html',function(){
+			Apontamentos.init();
+		});	
+		$('#menu-apontamentos').click(function() {
+			$('#app-main-content').load('views/apontamentos.html',function(){
+				Apontamentos.init();
+			});			
 		});
-  }
-
+		$('#menu-charts').click(function() {
+			$('#app-main-content').load('views/graficos.html',function(){
+				Graficos.init();
+			});			
+		});
+		
+		//Já alimenta o WebStorage com os dados...
+		//Network.init();
+	}
 }
+
+Number.prototype.toTime = function(){
+  var hrs = Math.floor(this)
+  var min = Math.round(this%1*60)
+  min = min<10 ? "0"+min : min.toString();
+  return hrs+":"+min;
+}
+
+
+
