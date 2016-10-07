@@ -1,7 +1,7 @@
 Teste Front-end Entelgy
 ===============
 A fim de agilizar e padronizar o projeto, eu utilizei algumas ferramentas e tecnologias para determinadas etapas.
-Quis fazer um tipo de WebApp para termos os scripts, css e html minificados, portanto, para criar a estrutura do projeto utilizei o Yeoman. Ele cria todas as pastas e a estrutura base do projeto através da pack generator-webapp. 
+Quis fazer um tipo de WebApp para termos os scripts, css e html minificados. Para a tarefa de criar a estrutura do projeto utilizei o Yeoman. Ele cria todas as pastas e a estrutura base do projeto através da pack generator-webapp. 
 ```
 yo webapp
 ```
