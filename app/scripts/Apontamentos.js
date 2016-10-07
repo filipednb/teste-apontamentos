@@ -34,7 +34,7 @@ var removeRowTable = function(that) {
 }
 
 //INsere dados no armazenamento
-var insertRowData = function() {
+var insertRowData = function() { 
 	//Pega os dados e serializa
 	var storedData =  JSON.parse(localStorage.getItem('DadosApontamentos'));
 	var arrayForm = $('#form-add-row').serializeArray(); //pega os dados do form e poe no array

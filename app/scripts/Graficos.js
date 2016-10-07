@@ -13,10 +13,10 @@ var initChartButtons = function () {
 	$('#btn-init-chart-twoweek').click(function(){
 		createChart(14);
 	});
-	$('#btn-init-chart-month').click(function(){
+	$('#btn-init-chart-monthly').click(function(){
 		createChart(30);
 	});
-	$('#btn-init-chart-sixmonth').click(function(){
+	$('#btn-init-chart-sixmonthly').click(function(){
 		createChart(180);
 	});
 	$('#btn-init-chart-yearly').click(function(){
@@ -29,7 +29,7 @@ var currentChartData = '';
 //define os dados dos gráficos de acordo com aquantidade de dias.
 var setChartData = function(days) {
 	var storedData = JSON.parse(localStorage.getItem('DadosApontamentos'));
-	var arrLabels = [];
+	var arrLabels = []; 
 	var arrWorkedHours = [];
 	
 	//definindo media mensal para criar a linha comparativa

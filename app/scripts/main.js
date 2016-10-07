@@ -1,14 +1,14 @@
 //Callback disparado quando a página está carregada
 $(document).ready(function(){
-	Main.init();
+	Main.init(); 
 	$('[data-toggle="offcanvas"]').click(function(){
        $('#navigation').toggleClass('hidden-xs');
    });
 });
 
-
 var Main = {
 	init: function() { 
+
 		//definindo ações dos botões do menu
 		$('#app-main-content').load('apontamentos.html',function(){
 			Apontamentos.init();
