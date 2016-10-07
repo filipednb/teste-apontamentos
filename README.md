@@ -20,8 +20,7 @@ Para programação das animações e manipulação dos DOMs utilizei o JQuery.
 
 O design do projeto foi um tipo de MVC. Onde o model seria o Back-end, o view os DOMs e os controles são os scripts.
 
-
-Installation
+Como implementar o Projeto
 -----------
 ```
 git clone https://github.com/filipednb/teste-apontamentos.git
@@ -35,12 +34,15 @@ bower install
 npm install
 ```
 
-Testar
+Como testar
+------------
 ```
 gulp serve
 ```
 
-Build para produção
+Como publicar
+------------
+
 ```
 gulp build
 ```
