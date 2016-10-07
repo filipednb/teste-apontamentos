@@ -20,12 +20,14 @@ Para programação das animações e manipulação dos DOMs utilizei o JQuery.
 
 O design do projeto foi um tipo de MVC. Onde o model seria o Back-end, o view os DOMs e os controles são os scripts.
 
-Como implementar o Projeto
+Como implementar o Projeto localmente:
 -----------
 ```
 git clone https://github.com/filipednb/teste-apontamentos.git
 ```
-
+```
+cd teste-apontamentos
+```
 ```
 bower install
 ```
