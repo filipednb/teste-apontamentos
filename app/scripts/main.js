@@ -9,6 +9,7 @@ $(document).ready(function(){
 var Main = {
 	init: function() { 
 
+
 		//definindo ações dos botões do menu
 		$('#app-main-content').load('apontamentos.html',function(){
 			Apontamentos.init();
