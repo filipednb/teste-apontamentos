@@ -58,4 +58,6 @@ TODO
 --------
 -confirmações
 -testes unitáios
+-paginação
+-corrigir e agrupar os dados nos graficos semestral e anual
 
