@@ -32,7 +32,7 @@ var setChartData = function(days) {
 	var arrLabels = [];
 	var arrWorkedHours = [];
 	
-	//definindo media mensal
+	//definindo media mensal para criar a linha comparativa
 	var arrMonths = [];
 	var mediaMensal = 0;
 	var monthCount = 1;
@@ -62,9 +62,7 @@ var setChartData = function(days) {
 			arrLineData.push(arrMonths[count]);
 		}
 	}
-
-
-
+	//inserindo a linha comparativa no grafico
 	currentChartData = {
     	labels: arrLabels,
     	datasets: [{
