@@ -54,10 +54,13 @@ Servindo a pasta /dist (produção)
 ```
 gulp serve:dist
 ```
+Obs.: O Template do login esta em /login.html
+
 TODO
 --------
 -confirmações
--testes unitáios
+-testes unitários
 -paginação
--corrigir e agrupar os dados nos graficos semestral e anual
+-templatizar
+-agrupar os dados nos graficos semestral e anual
 
