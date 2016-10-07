@@ -11,7 +11,7 @@ Para gerenciar algumas dependências e bibliotecas do projeto, alem do npm, usei
 bower install bootstrap --save
 ```
 
-Para automatizar o desenvolvimento e build do projeto usei o Gulp que também ajuda muito com seu LiveReload que atualiza o browser automaticamente a cada alteração dos arquivos que compõem o projeto.
+Para automatizar o desenvolvimento e build do projeto usei o Gulp que também ajuda muito com seu LiveReload que atualiza o browser automaticamente a cada alteração dos arquivos que compõem o projeto. Ele ja vem instalado com a estrutura do projeto.
 ```
 gulp build | gulp serve 
 ```
