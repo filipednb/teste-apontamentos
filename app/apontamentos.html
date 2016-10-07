@@ -1,0 +1,92 @@
+<div class="row">
+    <div class=" gutter">
+      <h4>Manutenção de Apontamentos</h4>
+      <div class="table-responsive">
+
+      <table id="table-apontamentos" class="table table-bordred table-striped">
+
+        <thead>
+          <tr>
+            <th><input type="checkbox" id="checkall" /></th>
+            <th>Entrada</th>
+            <th>Saída Alm.</th>
+            <th>Volta Alm.</th>
+            <th>Saída</th>
+            <th title='Horas trabalhadas'>H.T.</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tfoot>
+            <tr>
+              <th colspan="5" class="total-worked-time">Total de horas trabalhadas:</th>
+              <th id="total-hours">0</th>
+              <th colspan="4"></th>
+            </tr>
+          </tfoot>
+        </tbody>
+
+      </table>
+        <ul class="pull-right">
+          <li>
+            <a href="#" class="add-project" data-toggle="modal" data-target="#add_project">
+              <i class="fa fa-plus"></i>&nbsp;&nbsp;Inserir
+            </a>
+          </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Modal Insere linha -->
+<div id="add_project" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header login-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4 class="modal-title">Inserir Apontamento</h4>
+        </div>
+        <div class="modal-body">
+          <form id="form-add-row">
+            <input type="text" placeholder="Hora Entrada" onfocus="(this.type='time')" name="HE_1">
+            <input type="text" placeholder="Hora Saida Almoço " onfocus="(this.type='time')" name="HS_1">
+            <input type="text" placeholder="Hora Volta Almoço" onfocus="(this.type='time')" name="HE_2">
+            <input type="text" placeholder="Hora Saida" onfocus="(this.type='time')" name="HS_2">
+          </form>                  
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="cancel" data-dismiss="modal">Fechar</button>
+            <button type="button" class="add-project" data-dismiss="modal" onclick="(insertRowData(this))" id="btn-add-row">Concluir</button>
+        </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal edita linha -->
+<div id="edit_row" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header login-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4 class="modal-title">Editar Apontamento</h4>
+        </div>
+        <div class="modal-body">
+          <form id="form-edit-row">
+            <input type="hidden" id='edit-trId' value="" name="idTr">
+            <input type="time" id='edit-he1' placeholder="Hora Entrada" onfocus="(this.type='time')" name="HE_1">
+            <input type="time" id='edit-hs1' placeholder="Hora Saida Almoço " onfocus="(this.type='time')" name="HS_1">
+            <input type="time" id='edit-he2' placeholder="Hora Volta Almoço" onfocus="(this.type='time')" name="HE_2">
+            <input type="time" id='edit-hs2' placeholder="Hora Saida" onfocus="(this.type='time')" name="HS_2">
+          </form>                  
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="cancel" data-dismiss="modal">Fechar</button>
+            <button type="button" class="add-project" data-dismiss="modal" id="btn-edit-row">Concluir</button>
+        </div>
+    </div>
+
+  </div>
+</div>
